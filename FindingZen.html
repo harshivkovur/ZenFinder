@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindingZen</title>
+    <style>
+        body {
+            font-family: 'Consolas', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #abd2d2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 2em;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #0b0b0b;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #6d4caf;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            /*positive: relative; */
+            top: 50px; left: 50px;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        .left-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+        }
+
+    </style>
+
+
+</head>
+
+    <body>
+        <p><div><img class="left-image" src="http://tinyurl.com/5a4en789" alt="Left Image"></div></p>
+
+    </body>
+
+    <section>
+        <h2>Welcome to FindingZen</h2>
+        <p>FindingZen caters to users' health and wellness by serving as a guide to better their well-being.</p>
+        <p>We strive to do this by tracking and monitoring patterns regarding your physical activity, sleep, nutrition, water, food, and menstrual habits.</p>
+        <p>Our mission is to provide users with insight on ways to foster personal growth through their daily lives. </p>
+    </section>
+    
+    <section>
+        <h2>Key Features to Track</h2>
+    </section>
+    
+    <section>
+        <h1> How much time do you exercise each day? </h1>
+        <div>
+            <button onclick="document.getElementById('30minOrLess').style.display='block';"><a href="#30 min or less" class="cta-button">30 min or less</a></button>
+            <div id = "30minOrLess" style = "display: none;"> Considered inadequate. You should increase your daily exercise. There are many ways to go about this, including going on walks, going to the gym, jump-roping at home, etc. </div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('1hr').style.display='block';"><a href="#1 hr" class="cta-button">1 hour</a></button>
+            <div id = "1hr" style = "display: none;"> Decent amount of exercise. You should stay on track with what you are doing, but try to increase the duration by a little bit each day. </div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('2hr').style.display='block';"><a href="#2 hr" class="cta-button">2 hour</a></button>
+            <div id = "2hr" style = "display: none;"> Good amount of exercise. Make sure you don't overdo it by spending too much time working out. It is important to balance your food intake and your mental well-being on top of physical. </div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('over2hrs').style.display='block';"><a href="#over 2 hrs" class="cta-button">Over 2 hours</a></button>
+            <div id = "over2hrs" style = "display: none;"> May be a bit excessive, especially if consistent on a daily basis. Create a proper routine when you work out, and make sure to never overdo it and stay within your body's limits. </div>
+        </div>
+        
+    </section>
+
+
+    <section>
+        <h1> How many hours of sleep do you get each night?: </h1> 
+        <div>
+            <button onclick="document.getElementById('lessThan5').style.display='block';"><a href="#less than 5" class="cta-button">Less than 5</a></button>
+            <div id = "lessThan5" style = "display: none;"> Considered inadequate. Recommended to limit screen time, watch caffeine intake, follow a consistent sleep schedule, and evaluate stress levels.</div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('5to6').style.display='block';"><a href="#5-6" class="cta-button">5-6</a></button>
+            <div id = "5to6" style = "display: none;"> In range for adults, but lower end for optimal health. Suggested to create a relaxing bedtime routine, watch eating habits, watch exposure to natural light, and monitor mental health.</div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('7to8').style.display='block';"><a href="#7-8" class="cta-button">7-8</a></button>
+            <div id = "7to8" style = "display: none;">Recommended amount. Ensure sleep is of quality by optimizing sleep environment, watch eating and intake habits, get regular exercise, limit screentime, and evaluate comfort.</div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('9to10').style.display='block';"><a href="#9-10" class="cta-button">9-10</a></button>
+            <div id = "9to10" style = "display: none;">Considered a higher range for sleep time. Ensure optimal sleeping habits and schedule and try to limit naps.</div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('over10').style.display='block';"><a href="#over 10" class="cta-button">Over 10</a></button>
+            <div id = "over10" style = "display: none;">May be a bit excessive especially if consistent on a daily basis. Create a proper sleep routine. If receiving excessive sleep every day, limit naps and monitor diet and stress, anpotentially even consider underlying health conditions. </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <h1> How many glasses of water do you drink every day?: </h1> 
+        <div>
+            <button onclick="document.getElementById('lessThan4').style.display='block';"><a href="#less than 4" class="cta-button">Less than 4</a></button>
+            <div id = "lessThan4" style = "display: none;"> Considered inadequate. Women are typically recommended to 9 cups and men 13 cups to be properly hydrated. Drink more water: carry around a water bottle and refill it multiple times throughout the day. </div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('5-7').style.display='block';"><a href="#5-7" class="cta-button">5-7</a></button>
+            <div id = "5-7" style = "display: none;"> Considered inadequate. Women are recommended to drink 9 cups and men 11 cups. To improve your water intake, carry around water bottles and set goals throughout the day. </div>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('8OrOver').style.display='block';"><a href="#8 or over" class="cta-button">8 or over</a></button>
+            <div id = "8OrOver" style = "display: none;"> Good water consumption. This is the recommended amount of water, so stay on this routine and continue your water habits. </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <h1> How are you feeling today? </h1> 
+        <div>
+            <button onclick="document.getElementById('Sad').style.display='block';"><a href="#Sad" class="cta-button">😞</a></button>
+            <div id = "Sad" style = "display: none;"> Aww, we're sorry to hear that! It's natural to feel a bit down at times but here are some things that could help lighten your mood: talk to your friends and family, participate in activities you enjoy, spend time in the outdoors, exercise, meditate, journal, or even seek professional help if you find it necessary.</div>
+        </div>
+        <div>
+            <button onclick="document.getElementById('Meh').style.display='block';"><a href="#Meh" class="cta-button">😐</a></button>
+            <div id = "Meh" style = "display: none;"> This is a very common emotion, it's okay! Try changing your environment, spending time with loved ones, listening to music, trying something new, or practicing mindfulness.</div>
+        </div>
+        <div>
+            <button onclick="document.getElementById('Happy').style.display='block';"><a href="#Happy" class="cta-button">😀</a></button>
+            <div id = "Happy" style = "display: none;"> That's terrific to hear! Live in the moment, connect with loved ones, and take some time to do what you enjoy. You might even consider trying something new!</div>
+        </div>
+
+    </section>
+
+    <section>
+        <h1> Are you on your period?: </h1> 
+        <div>
+            <button onclick="document.getElementById('Yes').style.display='block';"><a href="#Yes" class="cta-button">Yes</a></button>
+            <div id = "Yes" style = "display: none;"> Being on your period can get tough sometimes, but here's some tips on how to get through it a little easier: stay hydrated, eat nutrition-rich foods, exercise if possible, take pain relievers, use warm compress, and make sure to get some rest!</div>
+        </div>
+        <div>
+            <button onclick="document.getElementById('No').style.display='block';"><a href="#No" class="cta-button">No</a></button>
+            <div id = "No" style = "display: none;"> Take this time to have some fun and practice self-care. Stay active and maintain a healthy lifestyle. Make sure to monitor your health as well. </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FindingZen - Your Wellness Tracker</p>
+    </footer>
+</body>
+
+</html>
